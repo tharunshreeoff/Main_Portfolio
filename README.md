@@ -1,70 +1,132 @@
-# Tharun Shree B — Portfolio
+# 👋 Hi, I'm Tharun Shree
 
-A production-ready portfolio built with **Next.js 14 (App Router)**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**. Content is sourced from Tharun's resume and lives in one place (`lib/data.ts`) so updates never require touching component code.
+### 🚀 Data Scientist \| Data Analyst \| Machine Learning Engineer
 
-## ✨ Features
+> Transforming raw data into intelligent solutions.
 
-- Next.js App Router, fully typed with TypeScript
-- Tailwind CSS with a CSS-variable color system (instant dark/light theme, no flash on load)
-- Framer Motion scroll-reveal animations, animated hero, typing effect, animated counters
-- Canvas particle background + custom cursor (desktop only, respects `prefers-reduced-motion`)
-- SEO: metadata API, Open Graph/Twitter cards, dynamic `sitemap.xml` and `robots.txt`
-- Accessible: semantic sections, keyboard-navigable nav, reduced-motion support
-- Custom 404 and error pages
-- Contact form with client-side validation (wired for easy Formspree/EmailJS/API-route swap)
-- Resume download button (serves the PDF from `/public`)
+------------------------------------------------------------------------
 
-## 🗂 Project Structure
+# 💫 About Me
 
-```
-app/
-  layout.tsx        Root layout, fonts, metadata
-  page.tsx           Assembles all sections
-  globals.css        Color system + base styles
-  sitemap.ts          Dynamic sitemap
-  robots.ts            Dynamic robots.txt
-  not-found.tsx        Custom 404
-  error.tsx             Error boundary
-components/
-  Nav, Hero, About, Experience, Projects, Skills,
-  Certifications, Contact, Footer, Cursor, ParticleField,
-  Loader, Counter, Reveal, SectionHeading, ThemeToggle
-lib/
-  data.ts             All resume content — edit this file to update the site
-public/
-  resume-tharun-shree.pdf   Downloadable resume
-  favicon.svg
-```
+I'm an aspiring **Data Scientist** passionate about solving real-world
+business problems using **Data Analytics, Machine Learning, Artificial
+Intelligence, and Business Intelligence**.
 
-## ✏️ Editing Content
+-   📊 Data Analytics
+-   🤖 Machine Learning
+-   🧠 Artificial Intelligence
+-   ⚙️ Data Engineering
+-   📈 Business Intelligence
 
-Everything text-based (name, roles, summary, experience, projects, skills, certifications) lives in **`lib/data.ts`**. Update that file and every section on the site updates automatically — no need to touch component files.
+------------------------------------------------------------------------
 
-To replace the resume file, drop a new PDF into `public/` and update `resumeFile` in `lib/data.ts`.
+# 🚀 Tech Stack
 
-To add a real profile photo, place an image in `public/` (e.g. `public/profile.jpg`) and swap the placeholder monogram block in `components/Hero.tsx` for a Next.js `<Image>` component.
+## Programming
 
-## 🎨 Color System
+-   Python
+-   SQL
 
-All colors are CSS variables defined in `app/globals.css` (`:root` for dark, `.light` for light mode) and exposed to Tailwind via `tailwind.config.ts`. Change `--accent` / `--accent2` to re-theme the entire site in two lines.
+## Data Analytics
 
-## 🚀 Getting Started
+-   Power BI
+-   Excel
 
-```bash
-npm install
-npm run dev
-```
+## Machine Learning
 
-Visit `http://localhost:3000`.
+-   Scikit-Learn
+-   XGBoost
+-   Random Forest
+-   KNN
+-   SVM
+-   Logistic Regression
+-   Feature Engineering
+-   GridSearchCV
+-   SMOTE
 
-See `DEPLOYMENT.md` for deploying to Vercel or Netlify.
+## Libraries
 
-## 🧪 Quality Checks
+-   Pandas
+-   NumPy
+-   Matplotlib
+-   Seaborn
+-   OpenCV
+-   PyTorch
+-   TensorFlow
+-   YOLOv5
 
-```bash
-npm run lint        # ESLint
-npx tsc --noEmit     # Type-check
-npm run build        # Production build
-```
+## Big Data
 
-This project was type-checked and linted clean during development. The very first `npm run build` needs internet access (it self-hosts the Google Fonts used — Playfair Display, Inter, JetBrains Mono) — this works automatically on your machine or on Vercel/Netlify's build servers.
+-   PySpark
+-   Hadoop
+-   Snowflake
+-   Databricks
+
+------------------------------------------------------------------------
+
+# 🏆 Featured Projects
+
+## 🚗 Intelligent Video Surveillance
+
+-   YOLOv5
+-   OpenCV
+-   DeepSORT
+-   Real-time Vehicle Detection & Speed Tracking
+
+## 💳 Credit Card Fraud Detection
+
+-   XGBoost
+-   SMOTE
+-   Feature Engineering
+-   99.52% Accuracy
+
+## 📊 Zepto Sales Dashboard
+
+-   Power BI
+-   DAX
+-   KPI Dashboard
+
+## 📈 Cryptocurrency Market Analysis
+
+-   Python
+-   EDA
+-   Data Visualization
+
+------------------------------------------------------------------------
+
+# 💼 Experience
+
+### Data Science Intern --- PySpiders Institute
+
+-   Data Cleaning
+-   ETL
+-   SQL
+-   Power BI
+-   Machine Learning
+
+### Machine Learning Intern --- NoviTech R&D
+
+-   Model Building
+-   Feature Engineering
+-   Hyperparameter Tuning
+
+------------------------------------------------------------------------
+
+# 📜 Certifications
+
+-   Deloitte Data Analytics
+-   Tata Data Visualisation
+-   NoviTech Machine Learning Internship
+-   AICTE Green Skills & AI
+
+------------------------------------------------------------------------
+
+# 📫 Connect
+
+-   GitHub: https://github.com/tharunshreeoff
+-   LinkedIn: https://linkedin.com/in/tharunshree
+-   Email: b.tharun066@gmail.com
+
+------------------------------------------------------------------------
+
+⭐ **Transforming Raw Data into Intelligent Solutions**
