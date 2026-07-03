@@ -7,7 +7,7 @@ export default function Reveal({
   children,
   delay = 0,
   className = '',
-  y = 29, 
+  y = 24,
 }: {
   children: ReactNode;
   delay?: number;

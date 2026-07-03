@@ -48,11 +48,11 @@ export default function Cursor() {
     <div className="pointer-events-none fixed inset-0 z-[9999] hidden md:block" aria-hidden="true">
       <div
         ref={dotRef}
-        className="absolute left-0 top-0 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent shadow-[0_0_15px_rgb(var(--accent))]"
+        className="absolute left-0 top-0 h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent shadow-[0_0_12px_rgb(var(--accent))]"
       />
       <div
         ref={ringRef}
-        className="absolute left-0 top-0 h-10 w-10 -translate-x-1/2 -translate-y-1/2 rounded-full border border-accent/50 transition-transform duration-200"
+        className="absolute left-0 top-0 h-8 w-8 -translate-x-1/2 -translate-y-1/2 rounded-full border border-accent/50 transition-transform duration-200"
       />
     </div>
   );
