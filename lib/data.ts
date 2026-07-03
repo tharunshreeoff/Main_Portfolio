@@ -180,20 +180,24 @@ export const certifications = [
     title: 'Machine Learning Internship Certificate',
     org: 'NoviTech R&D Private Limited',
     period: 'Jun 2025 – Jul 2025',
+    drive_link:'https://drive.google.com/file/d/15OMKbQ2B7BHygbJYn_Ol462e55e7oKeJ/view?usp=sharing',
   },
   {
     title: 'Data Analytics Job Simulation',
     org: 'Deloitte × Forage',
     period: 'Jun 2026',
+    drive_link:'https://drive.google.com/file/d/1Ava7mWKe14vRAiTX5Wma1JVbDj8O3RYs/view?usp=sharing',
   },
   {
     title: 'Data Visualisation: Empowering Business with Effective Insights',
     org: 'Tata × Forage',
     period: 'Jun 2026',
+    drive_link:'https://drive.google.com/file/d/1OkDzxNh5n0RO4kVcMyb2QUhF3jCRojV3/view?usp=sharing',
   },
   {
     title: 'Green Skills and Artificial Intelligence',
     org: 'Edunet Foundation, AICTE & Shell',
     period: 'Jan 2025',
+    drive_link:'https://drive.google.com/file/d/1M8eBtZY8gCi12XdQqkI0Ysf9oLOG_It3/view?usp=sharing',
   },
 ];

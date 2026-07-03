@@ -49,17 +49,17 @@ export default function Nav() {
         solid ? 'glass border-b card-border' : ''
       }`}
     >
-      <div className="section-wrap flex h-[68px] items-center justify-between">
-        <a href="#home" className="font-display text-xl font-bold text-gradient tracking-wide">
+      <div className="section-wrap flex h-[82px] items-center justify-between">
+        <a href="#home" className="font-display text-2xl font-bold text-gradient tracking-wide">
           TS
         </a>
 
-        <ul className="hidden items-center gap-1 md:flex">
+        <ul className="hidden items-center gap-1.5 md:flex">
           {links.map((l) => (
             <li key={l.href}>
               <a
                 href={l.href}
-                className={`rounded-full px-3.5 py-1.5 text-[13px] font-medium tracking-wide transition-colors ${
+                className={`rounded-full px-4 py-2 text-[15px] font-medium tracking-wide transition-colors ${
                   active === l.href ? 'bg-accent/10 text-accent' : 'text-muted hover:text-accent'
                 }`}
               >
@@ -69,34 +69,34 @@ export default function Nav() {
           ))}
         </ul>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-4">
           <ThemeToggle />
           <a
             href={profile.resumeFile}
             download
-            className="hidden rounded-full bg-accent px-5 py-2 text-[12.5px] font-semibold text-white transition-transform hover:-translate-y-0.5 md:inline-flex"
+            className="hidden rounded-full bg-accent px-6 py-2.5 text-[15px] font-semibold text-white transition-transform hover:-translate-y-0.5 md:inline-flex"
           >
             Resume
           </a>
           <button
-            className="flex h-9 w-9 items-center justify-center rounded-full card-border md:hidden"
+            className="flex h-11 w-11 items-center justify-center rounded-full card-border md:hidden"
             onClick={() => setOpen((v) => !v)}
             aria-label="Toggle menu"
           >
-            {open ? <X size={18} /> : <Menu size={18} />}
+            {open ? <X size={22} /> : <Menu size={22} />}
           </button>
         </div>
       </div>
 
       {open && (
-        <div className="glass border-t card-border px-6 py-4 md:hidden">
-          <ul className="flex flex-col gap-1">
+        <div className="glass border-t card-border px-7 py-5 md:hidden">
+          <ul className="flex flex-col gap-1.5">
             {links.map((l) => (
               <li key={l.href}>
                 <a
                   href={l.href}
                   onClick={() => setOpen(false)}
-                  className="block rounded-lg px-3 py-2 text-sm text-muted hover:text-accent"
+                  className="block rounded-lg px-4 py-2.5 text-base text-muted hover:text-accent"
                 >
                   {l.label}
                 </a>
@@ -106,7 +106,7 @@ export default function Nav() {
               <a
                 href={profile.resumeFile}
                 download
-                className="mt-2 block rounded-full bg-accent px-4 py-2 text-center text-sm font-semibold text-white"
+                className="mt-2.5 block rounded-full bg-accent px-5 py-2.5 text-center text-base font-semibold text-white"
               >
                 Download Resume
               </a>

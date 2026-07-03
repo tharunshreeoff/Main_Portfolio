@@ -18,7 +18,7 @@ export default function ParticleField() {
     const particles = Array.from({ length: count }, () => ({
       x: Math.random() * w,
       y: Math.random() * h,
-      r: Math.random() * 1.6 + 0.6,
+      r: Math.random() * 2 + 0.7, 
       vx: (Math.random() - 0.5) * 0.25,
       vy: (Math.random() - 0.5) * 0.25,
     }));

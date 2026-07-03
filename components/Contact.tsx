@@ -27,8 +27,6 @@ export default function Contact() {
     setErrors(nextErrors);
     if (Object.keys(nextErrors).length) return;
 
-    // NOTE: replace with a Formspree / EmailJS / API route call for production delivery.
-    // For now this opens the user's mail client with everything prefilled.
     const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
     window.location.href = `mailto:${profile.email}?subject=${encodeURIComponent(subject)}&body=${body}`;
 
@@ -38,93 +36,93 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-28">
+    <section id="contact" className="py-32">
       <div className="section-wrap">
         <SectionHeading tag="Contact" title="Let's build something with data." align="center" />
 
-        <div className="mx-auto mt-14 grid max-w-4xl gap-10 lg:grid-cols-[0.9fr_1.1fr]">
-          <Reveal delay={0.1} className="space-y-5">
-            <p className="text-[14.5px] leading-relaxed text-muted">
+        <div className="mx-auto mt-16 grid max-w-5xl gap-12 lg:grid-cols-[0.9fr_1.1fr]">
+          <Reveal delay={0.1} className="space-y-6">
+            <p className="text-[17.5px] leading-relaxed text-muted">
               Open to Data Scientist, Data Analyst, and ML Engineer roles. Reach out directly or
               use the form — I read every message.
             </p>
-            <div className="space-y-3">
+            <div className="space-y-4">
               <a
                 href={`mailto:${profile.email}`}
-                className="flex items-center gap-3 rounded-xl card-border bg-surface/50 p-4 text-[13.5px] transition-colors hover:border-accent/40"
+                className="flex items-center gap-4 rounded-xl card-border bg-surface/50 p-5 text-[16px] transition-colors hover:border-accent/40"
               >
-                <Mail size={16} className="text-accent" /> {profile.email}
+                <Mail size={19} className="text-accent" /> {profile.email}
               </a>
               <a
                 href={`tel:${profile.phone.replace(/\s+/g, '')}`}
-                className="flex items-center gap-3 rounded-xl card-border bg-surface/50 p-4 text-[13.5px] transition-colors hover:border-accent/40"
+                className="flex items-center gap-4 rounded-xl card-border bg-surface/50 p-5 text-[16px] transition-colors hover:border-accent/40"
               >
-                <Phone size={16} className="text-accent" /> {profile.phone}
+                <Phone size={19} className="text-accent" /> {profile.phone}
               </a>
               <a
                 href={profile.linkedin}
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center gap-3 rounded-xl card-border bg-surface/50 p-4 text-[13.5px] transition-colors hover:border-accent/40"
+                className="flex items-center gap-4 rounded-xl card-border bg-surface/50 p-5 text-[16px] transition-colors hover:border-accent/40"
               >
-                <Linkedin size={16} className="text-accent" /> {profile.linkedinLabel}
+                <Linkedin size={19} className="text-accent" /> {profile.linkedinLabel}
               </a>
               <a
                 href={profile.github}
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center gap-3 rounded-xl card-border bg-surface/50 p-4 text-[13.5px] transition-colors hover:border-accent/40"
+                className="flex items-center gap-4 rounded-xl card-border bg-surface/50 p-5 text-[16px] transition-colors hover:border-accent/40"
               >
-                <Github size={16} className="text-accent" /> {profile.githubLabel}
+                <Github size={19} className="text-accent" /> {profile.githubLabel}
               </a>
             </div>
           </Reveal>
 
           <Reveal delay={0.2}>
-            <form onSubmit={handleSubmit} noValidate className="space-y-4 rounded-2xl card-border bg-surface/50 p-7">
-              <div className="grid gap-4 sm:grid-cols-2">
+            <form onSubmit={handleSubmit} noValidate className="space-y-5 rounded-[1.25rem] card-border bg-surface/50 p-8 md:p-9">
+              <div className="grid gap-5 sm:grid-cols-2">
                 <div>
                   <input
                     name="name"
                     placeholder="Your name"
-                    className="w-full rounded-lg border border-border/10 bg-surface2 px-4 py-3 text-sm outline-none focus:border-accent"
+                    className="w-full rounded-xl border border-border/10 bg-surface2 px-5 py-4 text-base outline-none focus:border-accent"
                   />
-                  {errors.name && <p className="mt-1 text-[11.5px] text-red-400">{errors.name}</p>}
+                  {errors.name && <p className="mt-1.5 text-[14px] text-red-400">{errors.name}</p>}
                 </div>
                 <div>
                   <input
                     name="email"
                     placeholder="Your email"
-                    className="w-full rounded-lg border border-border/10 bg-surface2 px-4 py-3 text-sm outline-none focus:border-accent"
+                    className="w-full rounded-xl border border-border/10 bg-surface2 px-5 py-4 text-base outline-none focus:border-accent"
                   />
-                  {errors.email && <p className="mt-1 text-[11.5px] text-red-400">{errors.email}</p>}
+                  {errors.email && <p className="mt-1.5 text-[14px] text-red-400">{errors.email}</p>}
                 </div>
               </div>
               <div>
                 <input
                   name="subject"
                   placeholder="Subject"
-                  className="w-full rounded-lg border border-border/10 bg-surface2 px-4 py-3 text-sm outline-none focus:border-accent"
+                  className="w-full rounded-xl border border-border/10 bg-surface2 px-5 py-4 text-base outline-none focus:border-accent"
                 />
-                {errors.subject && <p className="mt-1 text-[11.5px] text-red-400">{errors.subject}</p>}
+                {errors.subject && <p className="mt-1.5 text-[14px] text-red-400">{errors.subject}</p>}
               </div>
               <div>
                 <textarea
                   name="message"
                   rows={5}
                   placeholder="Tell me about the role or project…"
-                  className="w-full resize-none rounded-lg border border-border/10 bg-surface2 px-4 py-3 text-sm outline-none focus:border-accent"
+                  className="w-full resize-none rounded-xl border border-border/10 bg-surface2 px-5 py-4 text-base outline-none focus:border-accent"
                 />
-                {errors.message && <p className="mt-1 text-[11.5px] text-red-400">{errors.message}</p>}
+                {errors.message && <p className="mt-1.5 text-[14px] text-red-400">{errors.message}</p>}
               </div>
               <button
                 type="submit"
-                className="flex w-full items-center justify-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5"
+                className="flex w-full items-center justify-center gap-2.5 rounded-full bg-accent px-7 py-4 text-base font-semibold text-white transition-transform hover:-translate-y-0.5"
               >
-                <Send size={15} /> Send Message
+                <Send size={18} /> Send Message
               </button>
               {status === 'sent' && (
-                <p className="text-center text-[12.5px] text-accent">
+                <p className="text-center text-[15px] text-accent mt-2">
                   Opening your mail client — thanks for reaching out!
                 </p>
               )}
