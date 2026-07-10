@@ -21,7 +21,7 @@ Every push to `main` auto-deploys.
 ## Before you deploy — quick checklist
 
 - [ ] Replace the "TS" monogram in `components/Hero.tsx` with your real photo (`public/profile.jpg`).
-- [ ] Update `public/resume-tharun-shree.pdf` whenever your resume changes.
+- [ ] Update `public/Final_resume_tharun.pdf` whenever your resume changes.
 - [ ] Add a real Open Graph image at `public/og-image.png` (1200×630px) — referenced in `app/layout.tsx`.
 - [ ] Wire the contact form to a real backend: the easiest options are:
   - **Formspree** — swap the `mailto:` redirect in `components/Contact.tsx` for a `fetch()` POST to your Formspree endpoint.

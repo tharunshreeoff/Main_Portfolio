@@ -14,7 +14,7 @@ export const profile = {
   linkedinLabel: 'linkedin.com/in/tharunshree',
   github: 'https://github.com/tharunshreeoff',
   githubLabel: 'https://github.com/tharunshreeoff',
-  resumeFile: '/resume-tharun-shree.pdf',
+  resumeFile: '/Final_resume_tharun.pdf',
   stats: [
     { n: 5, suffix: '+', label: 'End-to-End Projects' },
     { n: 200000, suffix: '+', label: 'Records Processed', compact: true },
